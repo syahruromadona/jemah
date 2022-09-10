@@ -1,0 +1,54 @@
+body {
+    margin:0;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+.first-banner{
+    color: white;
+    margin:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.Jemah, .subtitle{
+    text-align: center;
+}
+
+.text-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea{
+    border-radius: 5px;
+}
+
+.control{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flashcard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flashcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
