@@ -12,5 +12,3 @@ config = {
     'production': DevelopmentConfig
 }
 
-## Enter your Open API Key here
-OPENAI_API_KEY = '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'
