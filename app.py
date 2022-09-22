@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, send_file
 import aicontent
 import config
-import csv
+# import csv
 
 app = Flask(__name__)
 app.config.from_object(config.config['development'])
@@ -23,7 +23,7 @@ def productDescription():
         user = submission
 
         with open('jemah.csv', 'w') as out :
-            csv.writer( delimiter ='|')  
+            # csv.writer( delimiter ='|')  
             openAiAnswer = openAiAnswer.replace("? ", "?|")
             lines = [line for line in openAiAnswer.split('-')]
             #setiap kali jumpa '-' kita akan split the string to multiple string
