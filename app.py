@@ -17,8 +17,8 @@ def productDescription():
 
     if request.method == 'POST':
         submission = request.form['productDescription']
-        # query = "Create multiple questions and answer from this paragraph.\n\nPepsin is an endopeptidase that breaks down proteins into smaller peptides. It is produced in\nthe stomach and is one of the main digestive enzymes. Pepsin's proenzyme, pepsinogen, is\nreleased by the chief cells in the stomach wall, and upon mixing with the hydrochloric acid of\nthe gastric juice, pepsinogen activates to become pepsin.{} \n\n- What is pepsin? Pepsin is an endopeptidase that breaks down proteins into smaller peptides.\n- What is the proenzyme of pepsin? Pepsin's proenzyme is pepsinogen.".format(submission)
-        query = "Create questions and answer from this sentences.\n\nPepsin is an endopeptidase that breaks down proteins into smaller peptides.{} \n\n- What is pepsin? Pepsin is an endopeptidase that breaks down proteins into smaller peptides.".format(submission)
+        query = "Create multiple questions and answer from this paragraph.\n\nPepsin is an endopeptidase that breaks down proteins into smaller peptides. It is produced in\nthe stomach and is one of the main digestive enzymes. Pepsin's proenzyme, pepsinogen, is\nreleased by the chief cells in the stomach wall, and upon mixing with the hydrochloric acid of\nthe gastric juice, pepsinogen activates to become pepsin.{} \n\n- What is pepsin? Pepsin is an endopeptidase that breaks down proteins into smaller peptides.\n- What is the proenzyme of pepsin? Pepsin's proenzyme is pepsinogen.".format(submission)
+        # query = "Create questions and answer from this sentences.\n\nPepsin is an endopeptidase that breaks down proteins into smaller peptides.{} \n\n- What is pepsin? Pepsin is an endopeptidase that breaks down proteins into smaller peptides.".format(submission)
         openAiAnswer = aicontent.openAiQuery(query)
         user = submission
 
