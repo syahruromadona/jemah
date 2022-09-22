@@ -5,14 +5,14 @@
 
 {% block body %}
 <div class="first banner">
-    <h1 class="Jemah">Jemah</h1>
-    <p class="subtitle">Save hours making flashcard <br> and study more efficiently</p>
+    <h1 class="Jemah">Jemah (beta)</h1>
+    <p class="subtitle">Put your text here</p>
 </div>
 
 <form class="input-container" action="/product-description" method="post">
 
     <div class="mb-3">
-      <textarea class="form-control" name="productDescription" rows="10" cols="50" placeholder="eg. Apple iPhone" ></textarea>
+      <textarea id="selectedText" class="form-control" name="productDescription" rows="10" cols="50" placeholder="Pepsin is an endopeptidase that breaks down proteins into smaller peptides. It is produced in the stomach and ..." ></textarea>
     </div>
 
     <div class="mb-3">
@@ -21,11 +21,12 @@
 
 </form>
 
-<div class="flashcard-container"><h3>Flashcard</h3></div>
+<div class="mb-3"><h3>Text submitted</h3></div>
+<div class="mb-3"><p>{{submission}}</p></div>
 
-<div class="mb-3" >All your flashcard is in this Excel file for easy import to Anki</div>
-<div class="mb-3" ><a href="{{url_for('download')}}">Download the Excel file</a></div>
-
+<div class="mb-3"><h3>Flashcard Generated</h3></div>
 <div class="mb-3"><p>{{openAiAnswer}}</p></div>
+
+<div class="mb-3" ><p>All your flashcard is in this Excel file for easy import to Anki. <a href="{{url_for('download')}}">Download generated CSV file here</a></p></div>
 
 {% endblock %}
