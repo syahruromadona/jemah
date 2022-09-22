@@ -22,7 +22,7 @@ def productDescription():
         openAiAnswer = aicontent.openAiQuery(query)
         user = submission
 
-        with open('jemah.csv', 'w') as out :
+        with open('people.csv', 'w') as out :
             # csv.writer( delimiter ='|')  
             openAiAnswer = openAiAnswer.replace("? ", "?|")
             lines = [line for line in openAiAnswer.split('-')]
